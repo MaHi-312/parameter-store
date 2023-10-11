@@ -13,8 +13,11 @@ variable "parameters" {
     {name = "prod.rds.endpoint", value = "prod-mysql.cluster-cxsopddea5ko.us-east-1.rds.amazonaws.com", type = "String"},
 
     ## dev env
-    {name = "dev.expense.frontend.backend_url", value = "http://backend-dev.malleswaridevops.online/", type = "String"}
+    {name = "dev.expense.frontend.backend_url", value = "http://backend-dev.malleswaridevops.online/", type = "String"},
+
+    ## common env
+    {name = "jenkins_password", value = "admin123", type = "String"}
   ]
 }
 
-## Ideally we don't keep passwords in GIT REPOS, those will be created manually. secrete management of creating secrets is most of the time manual.
+## NOTE: Ideally we don't keep passwords in GIT REPOS, those will be created manually. secrete management of creating secrets is most of the time manual.
